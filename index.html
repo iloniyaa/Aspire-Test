@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Warranty</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
@@ -14,38 +14,44 @@
   <div class="container mt-5">
     <h1>Warranty request</h1>
 
-    <form action="https://formsubmit.co/ilona.sv.22@gmail.com" method="POST" class="row g-3">
+    <form action="https://formsubmit.co/1d60cb5c94f3cc71f48420f2bfc6d7c2" method="POST" enctype="multipart/form-data" class="row g-3">
+      <!-- Honeypot -->
+      <input type="text" name="_honey" style="display: none;">
+
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
       <div class="col-md-12">
         <label for="client" class="form-label">Company</label>
-        <input type="text" class="form-control" id="client" required>
+        <input type="text" name="customer" class="form-control" id="client" required>
       </div>
       <div class="col-md-12">
         <label for="contact" class="form-label">Contact name</label>
-        <input type="text" class="form-control" id="contact" required>
+        <input type="text" name="contact_name" class="form-control" id="contact" required>
       </div>
       <div class="col-md-4">
         <label for="order#" class="form-label">Order number</label>
-        <input type="text" class="form-control" id="order#" required>
+        <input type="text" name="order_number" class="form-control" id="order#" required>
       </div>
       <div class="col-md-4">
         <label for="order-date" class="form-label">Order date</label>
-        <input type="text" class="form-control" id="order-date">
+        <input type="date" name="order_date" class="form-control" id="order-date">
       </div>
       <div class="col-md-4">
         <label for="order-test" class="form-label">Order test</label>
-        <input type="text" class="form-control" id="order-test">
+        <input type="text" name="order-test" class="form-control" id="order-test">
       </div>
       <div class="col-md-6">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" required>
+        <input type="email" name="email" class="form-control" id="email" required>
       </div>
       <div class="col-md-6">
         <label for="phone" class="form-label">Phone</label>
-        <input type="phone" class="form-control" id="phone" required>
+        <input type="text" name="phone" class="form-control" id="phone" required>
       </div>
       <div class="col-md-12">
         <label for="articles" class="form-label">Frame articles</label>
-        <input type="articles" class="form-control" id="articles" required>
+        <input type="text" name="articles" class="form-control" id="articles" required>
       </div>
       <div class="col-md-12">
         <label for="details" class="form-label">Details</label>
@@ -53,7 +59,11 @@
       </div>
       <div class="col-md-12">
         <label class="form-label" for="input-file">Pictures of frames</label>
-        <input type="file" class="form-control" id="input-file" multiple="multiple" required>
+        <input type="file" name="upload1" class="form-control" id="input-file" accept="image/png, image/jpeg">
+        <input type="file" name="upload2" class="form-control" id="input-file" accept="image/png, image/jpeg">
+        <input type="file" name="upload3" class="form-control" id="input-file" accept="image/png, image/jpeg">
+        <input type="file" name="upload4" class="form-control" id="input-file" accept="image/png, image/jpeg">
+        <input type="file" name="upload5" class="form-control" id="input-file" accept="image/png, image/jpeg">
       </div>
       <div class="col-md-12">
         <button type="submit" class="btn btn-lg btn-primary">Submit</button>
