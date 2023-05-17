@@ -12,7 +12,7 @@
 <body>
 
   <div class="container mt-5">
-    <h1>Warranty request</h1>
+    <h1>Warranty Request</h1>
 
     <form action="https://formsubmit.co/1d60cb5c94f3cc71f48420f2bfc6d7c2" method="POST" enctype="multipart/form-data" class="row g-3">
       <!-- Honeypot -->
@@ -35,17 +35,21 @@
         <label for="contact" class="form-label">Contact name</label>
         <input type="text" name="contact_name" class="form-control" id="contact" required>
       </div>
-      <div class="col-md-4">
-        <label for="order#" class="form-label">Order number</label>
-        <input type="text" name="order_number" class="form-control" id="order#" required>
+      <div class="col-md-6">
+        <label for="order#" class="form-label">Invoice number</label>
+        <input type="text" name="order_number" class="form-control" id="order#">
       </div>
-      <div class="col-md-4">
-        <label for="order-date" class="form-label">Order date</label>
+      <div class="col-md-6">
+        <label for="order-date" class="form-label">Invoice date</label>
         <input type="date" name="order_date" class="form-control" id="order-date">
       </div>
-      <div class="col-md-4">
-        <label for="order-test" class="form-label">Order test</label>
-        <input type="text" name="order-test" class="form-control" id="order-test">
+      <div class="col-md-6">
+        <label for="model-number" class="form-label">Model number</label>
+        <input type="text" name="model_number" class="form-control" id="model-number" required>
+      </div>
+      <div class="col-md-6">
+        <label for="model-colour" class="form-label">Colour</label>
+        <input type="text" name="colour" class="form-control" id="model-colour" required>
       </div>
       <div class="col-md-6">
         <label for="email" class="form-label">Email</label>
@@ -56,15 +60,12 @@
         <input type="text" name="phone" class="form-control" id="phone" required>
       </div>
       <div class="col-md-12">
-        <label for="articles" class="form-label">Frame articles</label>
-        <input type="text" name="articles" class="form-control" id="articles" required>
-      </div>
-      <div class="col-md-12">
-        <label for="details" class="form-label">Details</label>
-        <textarea name="details" id="details" rows="5" class="form-control"></textarea>
+        <label for="details" class="form-label">Comments</label>
+        <textarea name="details" id="details" rows="5" class="form-control" placeholder="Briefly describe the problem"></textarea>
       </div>
       <div class="col-md-12">
         <label class="form-label" for="input-file">Pictures of frames</label>
+        <p>Please attach pictures of frames showing defect, model and colour.</p>
         <input type="file" name="upload1" class="form-control" id="input-file" accept="image/png, image/jpeg, image/heic">
         <input type="file" name="upload2" class="form-control" id="input-file" accept="image/png, image/jpeg">
         <input type="file" name="upload3" class="form-control" id="input-file" accept="image/png, image/jpeg">
