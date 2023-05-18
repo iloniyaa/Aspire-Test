@@ -9,3 +9,8 @@ h1 {
   font-size: 36px;
   text-transform: uppercase;
 }
+
+.button {
+  background-color: #6aa842;
+  color: #ffffff;
+}
